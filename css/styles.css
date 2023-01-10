@@ -9,6 +9,9 @@
     --white-color: #FFFFFF;
     --footer-alfa-color: rgba(255, 255, 255, 0.6);
 }
+img{
+    display: block;
+}
 ul, p, li{
     list-style-type: none;
     margin-top: 0;
@@ -61,11 +64,16 @@ body{
 
     padding: 6px 22px;
 }
+.buttons.filter:first-child{
+    padding-right: 25px;
+    padding-left: 25px;
+}
 .buttons.filter:hover,
 .buttons.filter:focus{
     background: var(--acsent-color);
     border: none;
     color: var(--white-color);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 .container{
     margin-left: auto;
@@ -74,7 +82,7 @@ body{
     padding-left: 15px;
     padding-right: 15px;
 }
-section{
+.section{
     padding-top: 94px;
     padding-bottom: 94px;
 }
@@ -184,6 +192,7 @@ section{
 /* Особливості */
 .features-list{
     display: flex;
+    justify-content: center;
 }
 .features-list .list-items{
     width: 270px;
@@ -214,11 +223,7 @@ section{
 }
 .speciality-list{
     display: flex;
-    /* height: 294px; */
-}
-.speciality-list .list-items{
-    display: block;
-    flex-basis: calc((100% - 60px) / 3);
+    justify-content: center;
 }
 .speciality-list .list-items:not(:last-child){
     margin-left: 0;
@@ -239,6 +244,7 @@ body .team{
 }
 .team-list{
     display: flex;
+    justify-content: center;
 }
 .team .title{
     text-align: center;
@@ -261,9 +267,6 @@ body .team{
 }
 .card:last-child{
     margin-right: 0;
-}
-.card-img{
-    display: block;
 }
 .card .card-title{
     font-size: inherit;
@@ -325,7 +328,25 @@ body .team{
     color: var(--acsent-color)
 }
 /*            Портфоліо          */
+/* Фільтри */
+.filter-group{
+    display: flex;
+    justify-content: center;
+
+    margin-bottom: 50px;
+}
+.filter-group .filter-items:not(:last-child){
+    margin-left: 0;
+    margin-right: 8px;
+}
 /* Картки */
+.cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    padding: 0;
+}
 .cards-list .card-title{
     color: var(--main-color);
     font-size: 18px;
@@ -338,5 +359,12 @@ body .team{
     letter-spacing: 0.03em;
     line-height: 1.87;
 }
-
-    
+.card-bbox{
+    border: 1px solid #EEEEEE;
+    border-top: none;
+    padding: 20px 24px;
+}
+.card-bbox > h3{
+    margin: 0;
+    margin-bottom: 4px;
+}
