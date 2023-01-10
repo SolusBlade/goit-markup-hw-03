@@ -48,11 +48,8 @@ body{
 }
 .buttons:hover,
 .buttons:focus{
-    background: var(--buttons-bg);
-    border: none;
-    color: var(--main-color);
-    font-size: 16px;
-    font-weight: 700;
+    background: #188CE8;
+    color: var(--white-color);
 }
 .buttons.filter{
     background: var(--buttons-bg);
@@ -78,7 +75,7 @@ body{
 .container{
     margin-left: auto;
     margin-right: auto;
-    width: 1230px;
+    width: 1200px;
     padding-left: 15px;
     padding-right: 15px;
 }
@@ -186,8 +183,11 @@ body{
     letter-spacing: 0.06em;
     font-weight: 900;
     
+    margin-left: auto;
+    margin-right: auto;
     margin-top: 0;
     margin-bottom: 30px;
+    width: 696px;
 }
 /* Особливості */
 .features-list{
@@ -211,8 +211,7 @@ body{
     margin-top: 0;
     margin-bottom: 10px;
 }
-.features-text{
-    background-color: black;
+.features .features-text{
     color: var(--second-color);
     margin-top: 0;
     margin-bottom: 0;
@@ -310,17 +309,14 @@ body .team{
 .foot-adress .adress-link{
     color: var(--white-color);
     font-style: normal;
-
-    display: inline-block;
-    margin-top: 0;
-    margin-bottom: 9px;
 }
-.list .list-items{
-    display: inline-block;
+.list .list-items:not(:last-child){
+    display: block;
     margin-top: 0;
     margin-bottom: 9px;
 }
 .foot-link{
+    font-style: normal;
     color: var(--footer-alfa-color);
 }
 .footer .foot-link:hover,
