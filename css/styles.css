@@ -85,8 +85,6 @@ section{
     line-height: 1.14;
 
     border-bottom: 1px solid #ECECEC;;
-    padding-top: 24px;
-    padding-bottom: 25px;
     margin: 0;
 }
 
@@ -113,12 +111,15 @@ section{
     display: flex;
     align-items: center;
 }
-.main-nav.list{
-    display: flex;
-}
 .main-nav.list > li:not(:last-child){
     margin-left: 0;
     margin-right: 50px;
+}
+.main-nav.list > li{
+    display: block;
+}
+.main-nav.list{
+    display: flex;
 }
 .main-nav{
     margin-right: auto;
@@ -126,6 +127,10 @@ section{
 .main-nav .link{
     color: var(--main-color);
     font-weight: 500;
+
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
 }
 .main-nav .link:hover,
 .main-nav .link:focus{
